@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FREE CRM Application Test Automation Regression Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.crm.qa.TestListeners.ExtentReportListener"/>
+  </listeners>
+  <test name="Free CRM Application Test Cases(failed)">
+    <classes>
+      <class name="com.crm.qa.TestCases.LoginPageTest">
+        <methods>
+          <include name="crmLogoImageTest"/>
+          <include name="setUp"/>
+          <include name="endReport"/>
+          <include name="setLog4j"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.TestCases.LoginPageTest -->
+      <class name="com.crm.qa.TestCases.HomePageTest">
+        <methods>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyContactsLinkTest"/>
+          <include name="endReport"/>
+          <include name="setUp"/>
+          <include name="setLog4j"/>
+          <include name="tearDown"/>
+          <include name="verifyUserNameTest"/>
+          <include name="verifyDealsPageLinkTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.TestCases.HomePageTest -->
+      <class name="com.crm.qa.TestCases.ContactsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyContactsPageLabelTest"/>
+          <include name="endReport"/>
+          <include name="selectMultipleContactsTest"/>
+          <include name="setLog4j"/>
+          <include name="tearDown"/>
+          <include name="validateCreateNewContactTest"/>
+          <include name="selectSingleContactsTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.TestCases.ContactsPageTest -->
+    </classes>
+  </test> <!-- Free CRM Application Test Cases(failed) -->
+</suite> <!-- Failed suite [FREE CRM Application Test Automation Regression Suite] -->

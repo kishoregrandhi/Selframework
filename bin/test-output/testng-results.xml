@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="FREE CRM Application Test Automation Regression Suite" duration-ms="287274" started-at="2020-03-22T11:14:34Z" finished-at="2020-03-22T11:19:22Z">
+    <groups>
+    </groups>
+    <test name="Free CRM Application Chrome Test Cases" duration-ms="287274" started-at="2020-03-22T11:14:34Z" finished-at="2020-03-22T11:19:22Z">
+      <class name="com.crm.qa.TestCases.ContactsPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="setUp" is-config="true" duration-ms="15595" started-at="2020-03-22T16:47:07Z" finished-at="2020-03-22T16:47:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyContactsPageLabelTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="verifyContactsPageLabelTest" duration-ms="1642" started-at="2020-03-22T16:47:23Z" finished-at="2020-03-22T16:47:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.ContactsPageTest.verifyContactsPageLabelTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsPageLabelTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="tearDown" is-config="true" duration-ms="687" started-at="2020-03-22T16:47:24Z" finished-at="2020-03-22T16:47:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyContactsPageLabelTest status=SUCCESS method=ContactsPageTest.verifyContactsPageLabelTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="setUp" is-config="true" duration-ms="20486" started-at="2020-03-22T16:47:25Z" finished-at="2020-03-22T16:47:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectSingleContactsTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="selectSingleContactsTest" duration-ms="1839" started-at="2020-03-22T16:47:46Z" finished-at="2020-03-22T16:47:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.ContactsPageTest.selectSingleContactsTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSingleContactsTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="tearDown" is-config="true" duration-ms="642" started-at="2020-03-22T16:47:47Z" finished-at="2020-03-22T16:47:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectSingleContactsTest status=SUCCESS method=ContactsPageTest.selectSingleContactsTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="setUp" is-config="true" duration-ms="17652" started-at="2020-03-22T16:47:48Z" finished-at="2020-03-22T16:48:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectMultipleContactsTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="selectMultipleContactsTest" duration-ms="1954" started-at="2020-03-22T16:48:06Z" finished-at="2020-03-22T16:48:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.ContactsPageTest.selectMultipleContactsTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectMultipleContactsTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="tearDown" is-config="true" duration-ms="659" started-at="2020-03-22T16:48:08Z" finished-at="2020-03-22T16:48:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectMultipleContactsTest status=SUCCESS method=ContactsPageTest.selectMultipleContactsTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="setUp" is-config="true" duration-ms="18105" started-at="2020-03-22T16:48:09Z" finished-at="2020-03-22T16:48:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="validateCreateNewContactTest" duration-ms="4701" started-at="2020-03-22T16:48:27Z" data-provider="getCRMContactsTestData" finished-at="2020-03-22T16:48:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.ContactsPageTest.validateCreateNewContactTest(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Peter]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Google]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContactTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="tearDown" is-config="true" duration-ms="650" started-at="2020-03-22T16:48:32Z" finished-at="2020-03-22T16:48:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCreateNewContactTest status=SUCCESS method=ContactsPageTest.validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="setUp" is-config="true" duration-ms="18129" started-at="2020-03-22T16:48:33Z" finished-at="2020-03-22T16:48:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="validateCreateNewContactTest" duration-ms="4761" started-at="2020-03-22T16:48:51Z" data-provider="getCRMContactsTestData" finished-at="2020-03-22T16:48:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.ContactsPageTest.validateCreateNewContactTest(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dr.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Cris]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Amazon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContactTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="tearDown" is-config="true" duration-ms="626" started-at="2020-03-22T16:48:55Z" finished-at="2020-03-22T16:48:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCreateNewContactTest status=SUCCESS method=ContactsPageTest.validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="setUp" is-config="true" duration-ms="19114" started-at="2020-03-22T16:48:56Z" finished-at="2020-03-22T16:49:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="validateCreateNewContactTest" duration-ms="5381" started-at="2020-03-22T16:49:15Z" data-provider="getCRMContactsTestData" finished-at="2020-03-22T16:49:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.ContactsPageTest.validateCreateNewContactTest(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mrs.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Muktha]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sharma]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ebay]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContactTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2]" name="tearDown" is-config="true" duration-ms="627" started-at="2020-03-22T16:49:21Z" finished-at="2020-03-22T16:49:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCreateNewContactTest status=SUCCESS method=ContactsPageTest.validateCreateNewContactTest(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.crm.qa.TestCases.ContactsPageTest@2b2948e2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.TestCases.ContactsPageTest -->
+      <class name="com.crm.qa.TestCases.HomePageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="setUp" is-config="true" duration-ms="25312" started-at="2020-03-22T16:45:34Z" finished-at="2020-03-22T16:46:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="verifyHomePageTitleTest" duration-ms="33" started-at="2020-03-22T16:46:00Z" finished-at="2020-03-22T16:46:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.HomePageTest.verifyHomePageTitleTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="tearDown" is-config="true" duration-ms="670" started-at="2020-03-22T16:46:00Z" finished-at="2020-03-22T16:46:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitleTest status=SUCCESS method=HomePageTest.verifyHomePageTitleTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="setUp" is-config="true" duration-ms="20186" started-at="2020-03-22T16:46:00Z" finished-at="2020-03-22T16:46:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserNameTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="verifyUserNameTest" duration-ms="120" started-at="2020-03-22T16:46:21Z" finished-at="2020-03-22T16:46:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.HomePageTest.verifyUserNameTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserNameTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="tearDown" is-config="true" duration-ms="653" started-at="2020-03-22T16:46:21Z" finished-at="2020-03-22T16:46:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserNameTest status=SUCCESS method=HomePageTest.verifyUserNameTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="setUp" is-config="true" duration-ms="17871" started-at="2020-03-22T16:46:21Z" finished-at="2020-03-22T16:46:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyContactsLinkTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="verifyContactsLinkTest" duration-ms="1701" started-at="2020-03-22T16:46:39Z" finished-at="2020-03-22T16:46:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.HomePageTest.verifyContactsLinkTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsLinkTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="tearDown" is-config="true" duration-ms="645" started-at="2020-03-22T16:46:41Z" finished-at="2020-03-22T16:46:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyContactsLinkTest status=SUCCESS method=HomePageTest.verifyContactsLinkTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="setUp" is-config="true" duration-ms="23245" started-at="2020-03-22T16:46:42Z" finished-at="2020-03-22T16:47:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyDealsPageLinkTest(java.lang.reflect.Method)[pri:4, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="verifyDealsPageLinkTest" duration-ms="1635" started-at="2020-03-22T16:47:05Z" finished-at="2020-03-22T16:47:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.HomePageTest.verifyDealsPageLinkTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDealsPageLinkTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a]" name="tearDown" is-config="true" duration-ms="644" started-at="2020-03-22T16:47:06Z" finished-at="2020-03-22T16:47:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDealsPageLinkTest status=SUCCESS method=HomePageTest.verifyDealsPageLinkTest(java.lang.reflect.Method)[pri:4, instance:com.crm.qa.TestCases.HomePageTest@eec5a4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.TestCases.HomePageTest -->
+      <class name="com.crm.qa.TestCases.LoginPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="setExtent" is-config="true" duration-ms="142" started-at="2020-03-22T16:44:34Z" finished-at="2020-03-22T16:44:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="setUp" is-config="true" duration-ms="19423" started-at="2020-03-22T16:44:35Z" finished-at="2020-03-22T16:44:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="loginPageTitleTest" duration-ms="23" started-at="2020-03-22T16:44:54Z" finished-at="2020-03-22T16:44:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.LoginPageTest.loginPageTitleTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="666" started-at="2020-03-22T16:44:54Z" finished-at="2020-03-22T16:44:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageTitleTest status=SUCCESS method=LoginPageTest.loginPageTitleTest(java.lang.reflect.Method)[pri:1, instance:com.crm.qa.TestCases.LoginPageTest@210366b4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="setUp" is-config="true" duration-ms="12520" started-at="2020-03-22T16:44:55Z" finished-at="2020-03-22T16:45:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="crmLogoImageTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="crmLogoImageTest" duration-ms="77" started-at="2020-03-22T16:45:07Z" finished-at="2020-03-22T16:45:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.LoginPageTest.crmLogoImageTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crmLogoImageTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="657" started-at="2020-03-22T16:45:07Z" finished-at="2020-03-22T16:45:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=crmLogoImageTest status=SUCCESS method=LoginPageTest.crmLogoImageTest(java.lang.reflect.Method)[pri:2, instance:com.crm.qa.TestCases.LoginPageTest@210366b4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="setUp" is-config="true" duration-ms="13157" started-at="2020-03-22T16:45:08Z" finished-at="2020-03-22T16:45:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="loginTest" duration-ms="12612" started-at="2020-03-22T16:45:21Z" finished-at="2020-03-22T16:45:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crm.qa.TestCases.LoginPageTest.loginTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="662" started-at="2020-03-22T16:45:34Z" finished-at="2020-03-22T16:45:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest(java.lang.reflect.Method)[pri:3, instance:com.crm.qa.TestCases.LoginPageTest@210366b4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@210366b4]" name="endReport" is-config="true" duration-ms="531" started-at="2020-03-22T16:49:21Z" finished-at="2020-03-22T16:49:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.crm.qa.TestCases.LoginPageTest -->
+    </test> <!-- Free CRM Application Chrome Test Cases -->
+  </suite> <!-- FREE CRM Application Test Automation Regression Suite -->
+</testng-results>
