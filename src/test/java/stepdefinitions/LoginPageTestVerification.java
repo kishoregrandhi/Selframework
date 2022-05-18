@@ -1,12 +1,12 @@
-package stepdefinations;
+package stepdefinitions;
 
 import java.io.IOException;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 
 import com.crm.qa.BaseClass.TestBase;
-import com.crm.qa.Constants.Constants;
 import com.crm.qa.Pages.ContactsPage;
 import com.crm.qa.Pages.DealsPage;
 import com.crm.qa.Pages.HomePage;
@@ -26,10 +26,10 @@ public class LoginPageTestVerification extends TestBase {
 	DealsPage dealsPage;
 	String homePageTitle;
 	
-	@Before()
+	//@Before()
 	public void setUp()
 	{
-		initialization();
+		//initialization();
 		Log.info("Application Launched Successfully");
 		
 		testUtil = new TestUtility();
@@ -62,7 +62,36 @@ public class LoginPageTestVerification extends TestBase {
                Assert.fail("page title was not matched");
 		}
 		
-		tearDown();
+		}
+	
+	@Given("click on contact menu and page title should be {string}")
+	public void click_on_contact_menu_and_page_title_should_be(String contact) throws InterruptedException {
+	    // Write code here that turns the phrase above into concrete actions
+		//driver.findElement(By.linkText("Contact")).click();
+		homePage.contactsclick();
+		Thread.sleep(2000);
+		String contactttile= homePage.PageText();
+		if (contactttile.equalsIgnoreCase(contact)) {
+			System.out.println("Contact Us Page is Opened");
+		} else {
+			Assert.fail("Contact Us Page is not opened");
+		}
 	}
+
+	@Given("click on Features menu and page title should be {string}")
+	public void click_on_features_menu_and_page_title_should_be(String features) throws InterruptedException {
+	    // Write code here that turns the phrase above into concrete actions
+		homePage.featuresclick();
+		//driver.findElement(By.linkText("Features")).click();
+		Thread.sleep(2000);
+		String featuresttile= homePage.PageText();
+		if (featuresttile.equalsIgnoreCase(features)) {
+			System.out.println("Features Page is Opened");
+		} else {
+			Assert.fail("Features is not opened");
+		}
+	}
+	
+	
 	
 }

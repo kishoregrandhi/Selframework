@@ -5,4 +5,5 @@ import com.crm.qa.BaseClass.TestBase;
 public class DealsPage extends TestBase
 {
 
+	
 }
