@@ -16,6 +16,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import com.crm.qa.BaseClass.TestBase;
 import com.crm.qa.Constants.Constants;
 import com.crm.qa.Utilities.WebEventListener;
+import com.epam.healenium.SelfHealingDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -23,6 +24,8 @@ import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ApplicationHooks extends TestBase {
+	
+	public static WebDriver delegate;
 
 	
 
@@ -40,7 +43,8 @@ public class ApplicationHooks extends TestBase {
 			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 			//System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
 			WebDriverManager.chromedriver().capabilities(chromeOptions).setup();
-			driver = new ChromeDriver(chromeOptions);
+			delegate = new ChromeDriver(chromeOptions);
+			driver= SelfHealingDriver.create(delegate);
 		}
 		else if(broswerName.equals("IE"))
 		{

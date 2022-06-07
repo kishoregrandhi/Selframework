@@ -33,11 +33,13 @@ import org.testng.annotations.BeforeTest;
 import com.crm.qa.Constants.Constants;
 import com.crm.qa.Utilities.TestUtility;
 import com.crm.qa.Utilities.WebEventListener;
+import com.epam.healenium.SelfHealingDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 	public static WebDriver driver;
+	public static WebDriver delegate;
 	public static Properties property;
 	public static ChromeOptions chromeOptions;
 
@@ -74,7 +76,9 @@ public class TestBase {
 			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 			// System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
 			WebDriverManager.chromedriver().capabilities(chromeOptions).setup();
-			driver = new ChromeDriver(chromeOptions);
+			delegate = new ChromeDriver(chromeOptions);
+			driver= SelfHealingDriver.create(delegate);
+			
 		} else if (broswerName.equals("IE")) {
 			System.setProperty("webdriver.ie.driver", Constants.INTERNET_EXPLORER_DRIVER_PATH);
 			driver = new InternetExplorerDriver();
@@ -97,24 +101,26 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Secs));
 	}
 
-	public void waitFor(By by, long... Seconds) {
+	public void waitFor(WebElement element, long... Seconds) {
 		long Secs = Seconds.length > 0 ? Seconds[0] : 30;
 		WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(Secs));
-		webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(by));
+		webDriverWait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
 	
 
-	public void sendKeys(By by, String text) {
-		driver.findElement(by).sendKeys(text);
+	public void sendKeys(WebElement ele, String text) {
+		//WebElement ele = driver.findElement(contactsLink)
+		//driver.findElement(By.xpath(ele)).sendKeys(text);
+		ele.sendKeys(text);
 	}
 
-	public void click(By by) {
-		driver.findElement(by).click();
+	public void click(WebElement element) {
+		element.click();
 	}
 
-	public String getText(By by) {
-		return driver.findElement(by).getText();
+	public String getText(WebElement element) {
+		return element.getText();
 	}
 
 	public String getTitle() {
@@ -125,35 +131,35 @@ public class TestBase {
 		return driver.getCurrentUrl();
 	}
 
-	public void selectByIndex(By by, int index) {
-		Select select = new Select(driver.findElement(by));
+	public void selectByIndex(WebElement element, int index) {
+		Select select = new Select(element);
 		select.selectByIndex(index);
 	}
 
-	public void selectByValue(By by, String value) {
-		Select select = new Select(driver.findElement(by));
+	public void selectByValue(WebElement element, String value) {
+		Select select = new Select(element);
 		select.selectByValue(value);
 	}
 
-	public void selectByVisibleText(By by, String text) {
-		Select select = new Select(driver.findElement(by));
+	public void selectByVisibleText(WebElement element, String text) {
+		Select select = new Select(element);
 		select.selectByVisibleText(text);
 	}
 
-	public boolean isSelected(By by) {
-		return driver.findElement(by).isSelected();
+	public boolean isSelected(WebElement element) {
+		return element.isSelected();
 	}
 
-	public boolean isEnabled(By by) {
-		return driver.findElement(by).isEnabled();
+	public boolean isEnabled(WebElement element) {
+		return element.isEnabled();
 	}
 
-	public boolean isDisplayed(By by) {
-		return driver.findElement(by).isDisplayed();
+	public boolean isDisplayed(WebElement element) {
+		return element.isDisplayed();
 	}
 
-	public String getAttribute(By by, String attribute) {
-		return driver.findElement(by).getAttribute(attribute);
+	public String getAttribute(WebElement element, String attribute) {
+		return element.getAttribute(attribute);
 	}
 
 	public void acceptAlert() {
@@ -168,48 +174,48 @@ public class TestBase {
 		return driver.switchTo().alert().getText();
 	}
 
-	public List<WebElement> getElements(By by) {
-		return driver.findElements(by);
+	public List<WebElement> getElements(List<WebElement> element) {
+		return element;
 	}
 
-	public void mouseOver(By by, int... offset) {
+	public void mouseOver(WebElement element, int... offset) {
 		int x = offset.length > 0 ? offset[0] : 0;
 		int y = offset.length > 0 ? offset[1] : 0;
 		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(by), x, y).build().perform();
+		actions.moveToElement(element, x, y).build().perform();
 	}
 
-	public void rightClick(By by, int... offset) {
+	public void rightClick(WebElement element, int... offset) {
 		int x = offset.length > 0 ? offset[0] : 0;
 		int y = offset.length > 0 ? offset[1] : 0;
 		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(by), x, y).contextClick().build().perform();
+		actions.moveToElement(element, x, y).contextClick().build().perform();
 	}
 
-	public void doubleClick(By by, int... offset) {
+	public void doubleClick(WebElement element, int... offset) {
 		int x = offset.length > 0 ? offset[0] : 0;
 		int y = offset.length > 0 ? offset[1] : 0;
 		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(by), x, y).doubleClick().build().perform();
+		actions.moveToElement(element, x, y).doubleClick().build().perform();
 	}
 
-	public void dragAndDrop(By source, By destination) {
+	public void dragAndDrop(WebElement source, WebElement destination) {
 		Actions actions = new Actions(driver);
-		actions.dragAndDrop(driver.findElement(source), driver.findElement(destination)).build().perform();
+		actions.dragAndDrop(source, destination).build().perform();
 	}
 
-	public void sendKeyboardKeys(By by, CharSequence keys, int... offset) {
+	public void sendKeyboardKeys(WebElement element, CharSequence keys, int... offset) {
 		int x = offset.length > 0 ? offset[0] : 0;
 		int y = offset.length > 0 ? offset[1] : 0;
 		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(by), x, y).sendKeys(keys).build().perform();
+		actions.moveToElement(element, x, y).sendKeys(keys).build().perform();
 	}
 
-	public void sendKeyboardSpecialKeys(By by, Keys keys, int... offset) {
+	public void sendKeyboardSpecialKeys(WebElement element, Keys keys, int... offset) {
 		int x = offset.length > 0 ? offset[0] : 0;
 		int y = offset.length > 0 ? offset[1] : 0;
 		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(by), x, y).sendKeys(keys).build().perform();
+		actions.moveToElement(element, x, y).sendKeys(keys).build().perform();
 	}
 
 	public void switchToWindow(int index) {
@@ -222,17 +228,16 @@ public class TestBase {
 		driver.switchTo().window(arr.get(index));
 	}
 
-	public void switchToFrame(By by) {
-		WebElement element = driver.findElement(by);
+	public void switchToFrame(WebElement element) {
 		driver.switchTo().frame(element);
 	}
 
-	public void switchToDefault(By by) {
+	public void switchToDefault() {
 		driver.switchTo().defaultContent();
 	}
 
-	public void OpenInNewTab(By by) {
-		driver.findElement(by).sendKeys(Keys.chord(Keys.CONTROL, Keys.ENTER));
+	public void OpenInNewTab(WebElement element) {
+		element.sendKeys(Keys.chord(Keys.CONTROL, Keys.ENTER));
 	}
 
 	@AfterTest

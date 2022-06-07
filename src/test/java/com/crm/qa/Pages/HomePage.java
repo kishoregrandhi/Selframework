@@ -15,7 +15,7 @@ public class HomePage extends TestBase {
 	@CacheLookup
 	WebElement userNameLabel;
 
-	@FindBy(xpath = "//a[contains(text(),'Contact')]")
+	@FindBy(xpath = "//a[contains(text(),'Contact1')]")
 	WebElement contactsLink;
 
 	// @FindBy(xpath = "//a[contains(text(),'Contact')]")
@@ -60,6 +60,7 @@ public class HomePage extends TestBase {
 //		driver.findElement(contactsLink).click();
 //		sendKeys(contactsLink, "testing");
 		contactsLink.click();
+		sendKeys(contactsLink, "");
 		return new ContactsPage();
 	}
 

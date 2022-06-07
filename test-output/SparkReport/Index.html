@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 16, 2022 01:16:05 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jun 7, 2022 04:33:33 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 16, 2022 01:16:05 PM</h3>
+<h3>Jun 7, 2022 04:33:33 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 16, 2022 01:17:14 PM</h3>
+<h3>Jun 7, 2022 04:34:20 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>2</b> features passed
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='50%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
+<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='50%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> steps passed</small></div>
+<div><small data-tooltip='57%'><b>4</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='28%'><b>2</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login page feature for OrangeHRM":50.22,"Login page feature for Salesforce":15.171
+"Login page feature for OrangeHRM":30.514,"Login page feature for Salesforce":15.296
 };
 </script>
 <div class="row">
@@ -173,11 +178,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@smoke</td>
-<td>2</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>50%</td>
 </tr>
 </tbody>
 </table></div>
@@ -214,21 +219,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 0,
+passParent: 1,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 2,
-failChild: 0,
+passChild: 1,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 6,
-failGrandChild: 0,
+passGrandChild: 4,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -243,6 +248,7 @@ eventsCount: 5,
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -256,25 +262,25 @@ eventsCount: 5,
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Login page feature for OrangeHRM</p>
             <p class="text-sm">
-              <span>1:16:08 PM</span> / <span>00:00:50:220</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>4:33:34 PM</span> / <span>00:00:30:514</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Login page feature for OrangeHRM</h5>
-<span class='badge badge-success'>05.16.2022 1:16:08 PM</span>
-<span class='badge badge-danger'>05.16.2022 1:16:58 PM</span>
-<span class='badge badge-default'>00:00:50:220</span>
+<h5 class="test-status text-fail">Login page feature for OrangeHRM</h5>
+<span class='badge badge-success'>06.07.2022 4:33:34 PM</span>
+<span class='badge badge-danger'>06.07.2022 4:34:05 PM</span>
+<span class='badge badge-default'>00:00:30:514</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -286,24 +292,104 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>verify the user navigating to all the pages</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>verify the user navigating to all the pages</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinations.LoginPageTestVerification.user_is_on_login_page()">
+              <div class="step pass-bg" title="stepdefinitions.LoginPageTestVerification.user_is_on_login_page()">
                 <span>Given user is on login page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageTestVerification.click_on_contact_menu_and_page_title_should_be(java.lang.String)">
+              <div class="step fail-bg" title="stepdefinitions.LoginPageTestVerification.click_on_contact_menu_and_page_title_should_be(java.lang.String)">
                 <span>And click on contact menu and page title should be "Contact us"</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Failed to find element using By.xpath: //a[contains(text(),'Contact1')]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'HW0524', ip: '192.168.0.160', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: driver.version: unknown
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:67)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.crm.qa.Pages.HomePage.contactsclick(HomePage.java:77)
+	at stepdefinitions.LoginPageTestVerification.click_on_contact_menu_and_page_title_should_be(LoginPageTestVerification.java:71)
+	at ✽.click on contact menu and page title should be "Contact us"(file:///C:/Users/saikrishna.vandanapu/Downloads/MavenHybridFramework-master/MavenHybridFramework-master/src/main/resources/features/LoginPage.feature:13)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.epam.healenium.model.LastHealingDataDto.getPaths()" because "lastHealingDataDto" is null
+	at com.epam.healenium.processor.HealingProcessor.validate(HealingProcessor.java:22)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:40)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:49)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:49)
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:58)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.crm.qa.Pages.HomePage.contactsclick(HomePage.java:77)
+	at stepdefinitions.LoginPageTestVerification.click_on_contact_menu_and_page_title_should_be(LoginPageTestVerification.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageTestVerification.click_on_features_menu_and_page_title_should_be(java.lang.String)">
+              <div class="step skip-bg" title="stepdefinitions.LoginPageTestVerification.click_on_features_menu_and_page_title_should_be(java.lang.String)">
                 <span>And click on Features menu and page title should be "The Professional CRM Solution"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">java.lang.ClassCastException: class jdk.proxy2.$Proxy25 cannot be cast to class org.openqa.selenium.TakesScreenshot (jdk.proxy2.$Proxy25 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.TakesScreenshot is in unnamed module of loader 'app')
+	at AppHooks.ApplicationHooks.tearDown(ApplicationHooks.java:86)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -319,7 +405,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login page feature for Salesforce</p>
             <p class="text-sm">
-              <span>1:16:58 PM</span> / <span>00:00:15:171</span>
+              <span>4:34:05 PM</span> / <span>00:00:15:296</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -328,9 +414,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login page feature for Salesforce</h5>
-<span class='badge badge-success'>05.16.2022 1:16:58 PM</span>
-<span class='badge badge-danger'>05.16.2022 1:17:14 PM</span>
-<span class='badge badge-default'>00:00:15:171</span>
+<span class='badge badge-success'>06.07.2022 4:34:05 PM</span>
+<span class='badge badge-danger'>06.07.2022 4:34:20 PM</span>
+<span class='badge badge-default'>00:00:15:296</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -347,17 +433,17 @@ eventsCount: 5,
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinations.LoginPageTestVerification.user_is_on_login_page()">
+              <div class="step pass-bg" title="stepdefinitions.LoginPageTestVerification.user_is_on_login_page()">
                 <span>Given user is on login page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageTestVerification.user_gets_the_title_of_the_page()">
+              <div class="step pass-bg" title="stepdefinitions.LoginPageTestVerification.user_gets_the_title_of_the_page()">
                 <span>When user gets the title of the page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageTestVerification.page_title_should_be(java.lang.String)">
+              <div class="step pass-bg" title="stepdefinitions.LoginPageTestVerification.page_title_should_be(java.lang.String)">
                 <span>Then page title should be "Free CRM - CRM software for customer relationship management, sales, and support."</span>
       <div>
       </div>
@@ -388,7 +474,8 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@smoke</p>
 <p class="duration text-sm">2 tests</p>
@@ -396,7 +483,8 @@ eventsCount: 5,
 <div class="test-contents d-none">
 <div class="info">
 <h4>@smoke</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -407,9 +495,9 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:16:08 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:33:34 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>verify the user navigating to all the pages</a>
 <div class="">
@@ -419,11 +507,99 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:16:58 PM</td>
+<td>16:34:05 PM</td>
 <td>
 <a href="#" class="linked" test-id='9' id='10'>Login page title</a>
 <div class="">
 <span class="badge badge-default">Login page feature for Salesforce.Login page title</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:33:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>And click on contact menu and page title should be "Contact us"</a>
+<div class="">
+<span class="badge badge-default">Login page feature for OrangeHRM.verify the user navigating to all the pages.And click on contact menu and page title should be "Contact us"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.ClassCastException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.ClassCastException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:34:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Login page feature for OrangeHRM.verify the user navigating to all the pages.AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>
